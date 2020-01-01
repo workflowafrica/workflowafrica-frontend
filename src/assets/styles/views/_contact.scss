@@ -1,0 +1,155 @@
+.contact {
+  margin: 0%;
+  .contact-header {
+    padding: 30px;
+    h1 {
+      text-align: center;
+      padding-top: 100px;
+      font-size: 60px;
+      color: white;
+    }
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+    .heading {
+      text-align: center;
+      padding-top: 40px;
+    }
+    .short-note {
+      text-align: center;
+      font-size: 25px;
+      padding: 0 20%;
+      line-height: 160%;
+    }
+    .office {
+      margin: 0 20%;
+      .head-office {
+        border: solid 1px $box-shadow-color;
+        box-shadow: 2px 2px 2px $box-shadow-color;
+        margin-right: 20px;
+        padding: 0 30px;
+        .office-heading {
+          color: #ff3838;
+        }
+        span {
+          color: #ff3838;
+        }
+      }
+      .online-office {
+        border: solid 1px $box-shadow-color;
+        box-shadow: 2px 2px 2px $box-shadow-color;
+        padding: 0 20px;
+
+        .online-heading {
+          color: #ff3838;
+        }
+      }
+      .social-row {
+        display: flex;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+          color: rgb(44, 42, 42);
+        }
+        .fa {
+          margin-right: 5px;
+        }
+      }
+    }
+    .message {
+      background-color: $box-shadow-color;
+      width: 100%;
+      margin: 70px 0 0;
+      padding: 30px;
+      .message-heading {
+        text-align: center;
+      }
+      .client {
+        .client-lists {
+          text-align: center;
+          margin: 70px 0;
+          a {
+            text-decoration: none;
+          }
+          .list {
+            display: inline;
+            margin: 5px;
+            border: solid 2px white;
+            background-color: white;
+            color: rgb(44, 42, 42);
+            padding: 10px;
+            list-style: none;
+            text-decoration: none;
+            border-radius: 5px;
+          }
+        }
+      }
+
+      .feedback-form {
+        display: block;
+        text-align: center;
+        input {
+          height: 40px;
+          padding-left: 10px;
+          margin: 15px 0;
+          border: solid 1px white;
+          border-radius: 5px;
+          background-color: white;
+        }
+        .name {
+          width: 100%;
+        }
+        .email {
+          width: 50%;
+          border-radius: 5px 0px 0px 5px;
+        }
+        .number {
+          width: 50%;
+          border-left: 4px solid $box-shadow-color;
+        }
+        .company {
+          width: 100%;
+          border-radius: 5px;
+        }
+
+        .options {
+          width: 100%;
+          height: 40px;
+          padding: 10px;
+          margin: 15px 0;
+          border: solid 1px white;
+          border-radius: 5px;
+          background-color: white;
+        }
+        .textarea {
+          width: 100%;
+          height: 100px;
+          padding: 10px;
+          margin: 10px 0;
+          border: solid 1px white;
+          border-radius: 5px 5px 0 5px;
+          background-color: white;
+        }
+        .feedback-button {
+          width: 50%;
+          height: 40px;
+          padding: 10px;
+          margin: 15px 0 100px;
+          border: solid 1px red;
+          background-color: red;
+          color: white;
+          font-size: 20px;
+          border-radius: 5px;
+          align-items: center;
+        }
+      }
+    }
+    .map {
+      background-color: black;
+      //   padding: 30px;
+      height: 100px;
+      width: 100%;
+    }
+  }
+}
