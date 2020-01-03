@@ -35,6 +35,17 @@
   min-height: 400px;
 }
 
+.service-header {
+  background-image: url("../images/service.jpg"),
+    linear-gradient(
+      269.65deg,
+      rgba(177, 161, 13, 0.8) 37.69%,
+      rgba(118, 109, 24, 0.8) 99.8%
+    );
+  background-size: cover;
+  min-height: 400px;
+}
+
 button:active {
   outline: none !important;
   border: none !important;

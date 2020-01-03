@@ -89,6 +89,7 @@
       .feedback-form {
         display: block;
         text-align: center;
+        padding: 0 150px;
         input {
           height: 40px;
           padding-left: 10px;
@@ -124,7 +125,7 @@
         }
         .textarea {
           width: 100%;
-          height: 100px;
+          height: 200px;
           padding: 10px;
           margin: 10px 0;
           border: solid 1px white;

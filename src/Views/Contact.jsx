@@ -1,5 +1,5 @@
 import React from "react";
-// import GoogleMap from "../components/Goodmap";
+import GoogleMap from "../components/Goodmap";
 
 const Contact = () => (
   <div className="contact" id="contact">
@@ -157,7 +157,7 @@ const Contact = () => (
         width: "100%"
       }}
     >
-      {/* <GoogleMap /> */}
+      <GoogleMap />
     </div>
   </div>
 );
