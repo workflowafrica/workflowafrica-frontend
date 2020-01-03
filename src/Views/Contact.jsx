@@ -1,8 +1,8 @@
 import React from "react";
-import GoogleMap from "../components/Goodmap";
+// import GoogleMap from "../components/Goodmap";
 
 const Contact = () => (
-  <div className="contact">
+  <div className="contact" id="contact">
     <div className="contact-header">
       <h1>Contact Us</h1>
     </div>
@@ -149,9 +149,15 @@ const Contact = () => (
           </button>
         </form>
       </div>
-      <div className="map">
-        <GoogleMap />
-      </div>
+    </div>
+    <div
+      style={{
+        display: "block",
+        height: "500px",
+        width: "100%"
+      }}
+    >
+      {/* <GoogleMap /> */}
     </div>
   </div>
 );

@@ -1,19 +1,26 @@
 import React from "react";
-import { Map, GoogleApiWrapper } from "google-maps-react";
+import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
 
 const GoogleMap = props => (
-  <Map
-    google={props.google}
-    zoom={8}
-    style={mapStyles}
-    initialCenter={{ lat: 47.444, lng: -122.176 }}
-  />
+  <div className="map">
+    {" "}
+    <Map
+      google={props.google}
+      zoom={8}
+      style={mapStyles}
+      initialCenter={{ lat: 47.444, lng: -122.176 }}
+    >
+      {" "}
+      <Marker position={{ lat: 48.0, lng: -122.0 }} />
+    </Map>
+    /
+  </div>
 );
 const mapStyles = {
-  width: "100%",
-  height: "100%"
+  height: "500px",
+  width: "100%"
 };
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyDxmbIA_PhEzXdls18lRq1fA_oGOSeN1ks"
+  apiKey: "Token Here"
 })(GoogleMap);
