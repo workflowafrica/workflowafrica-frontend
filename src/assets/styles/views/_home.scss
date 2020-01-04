@@ -1,0 +1,63 @@
+.home {
+  height: 100vh;
+  max-height: 800px;
+  justify-content: space-around;
+  flex-direction: column;
+  display: flex;
+  padding-top: 120px;
+  .heading {
+    .hero-text-container {
+      margin-left: 10%;
+      padding: 10px 30px;
+      border-left: 4px solid $primary-color;
+      p {
+        font-size: 300%;
+        margin: 0px;
+        color: $primary-color;
+        font-weight: 800;
+      }
+      .light {
+        color: $white-color;
+        font-weight: 200;
+      }
+    }
+    .description {
+      margin: 20px;
+      margin-left: 7%;
+      padding-top: 50px;
+      max-width: 500px;
+      color: $white-color;
+      font-size: 120%;
+      font-weight: 300;
+    }
+  }
+  .action-buttons {
+    margin-left: 12%;
+    button {
+      background-color: $primary-color;
+      border: 2px solid $primary-color;
+      margin: 10px 20px;
+      font-size: 150%;
+      border-radius: 30px;
+      padding: 10px 20px;
+      transition: all 0.3s linear;
+      cursor: pointer;
+      box-shadow: 3px 3px 12px $box-shadow-color;
+    }
+    .start-now:hover {
+      background-color: transparent;
+      transition: all 0.3s linear;
+      color: $white-color;
+    }
+    .learn-more {
+      background-color: transparent;
+      color: $white-color;
+      transition: all 0.3s linear;
+    }
+    .learn-more:hover {
+      background-color: $primary-color;
+      color: $black-color;
+      transition: all 0.3s linear;
+    }
+  }
+}
