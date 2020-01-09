@@ -1,8 +1,9 @@
 .footer {
   .news-letter {
-    padding: 3% 1%;
+    padding: 3% 10%;
     background-color: #ff3838;
     .news {
+      padding-right: 80px;
       .footer-header {
         color: white;
         margin-bottom: 0;
@@ -11,7 +12,7 @@
         width: 100%;
         border: solid 1px white;
         align-items: flex-start;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
       }
       .news-form {
         display: flex;
@@ -34,77 +35,119 @@
       }
     }
     .feedback {
-      background-color: white;
-      padding: 10px;
+      background-color: rgb(194, 46, 46);
       border-radius: 5px;
-      h2 {
-        color: red;
-        text-align: center;
-        margin-bottom: 0;
-      }
-      hr {
-        width: 50%;
-        align-items: center;
-        border: solid 1px red;
-      }
-
-      input {
-        width: 80%;
-        height: 40px;
-        padding: 10px;
-        margin: 5px;
-      }
-      .number {
-        widows: 40%;
-      }
-      .options {
-        width: 80%;
-        height: 40px;
-        padding: 10px;
-        margin: 5px;
-      }
-      .feedback-button {
-        align-items: center;
-        background-color: red;
+      color: white;
+      line-height: 50px;
+      padding: 30px 50px;
+      justify-content: space-between;
+      text-decoration: none;
+      font-size: 20px;
+      a {
+        text-decoration: none;
         color: white;
-        width: 40%;
-        height: 40px;
-        padding: 10px;
-        margin: 5px;
-        border: 0;
-        border-radius: 5px;
-        transition: all 0.3s linear;
+        padding: 12px;
+        i {
+          margin-right: 50px;
+          font-size: 30px;
+        }
       }
     }
   }
   .footer-nav {
     background-color: rgb(44, 40, 40);
     margin: 0%;
-    color: white;
+    color: rgb(231, 229, 229);
     .footer-link {
       padding: 50px 5%;
+      line-height: 30px;
+      hr {
+        display: none;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
       .footer-contact {
         margin: 10px;
-        ul {
-          list-style: none;
-        }
+      }
+      .footer-quicklink {
+        display: block;
+        text-align: end;
       }
       .footer-about {
         margin: 10px;
-        ul {
-          list-style: none;
-        }
+        text-align: end;
       }
       .footer-connect {
         margin: 10px;
-        ul {
-          list-style: none;
-          text-decoration: none;
-        }
+        text-align: end;
       }
     }
     .end-note {
       text-align: center;
+      margin: 0;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .news-letter {
+      display: block !important;
+      width: 100%;
+      padding: 3% 5%;
+      .news {
+        padding-right: 0;
+        .footer-header {
+          margin-bottom: 0;
+        }
+        hr {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+        .news-form {
+          .news-input {
+            width: 80%;
+          }
+          .news-button {
+            margin-right: 10px;
+          }
+        }
+      }
+      .feedback {
+        margin-top: 20px;
+        line-height: 40px;
+        padding: 30px 10px 30px 30px;
+        font-size: 18px;
+        a {
+          padding: 0;
+          i {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+    .footer-nav {
+      .footer-link {
+        display: block !important;
+        padding: 30px 5%;
+        text-align: center;
+        hr {
+          display: block;
+          border: 1px solid;
+        }
+        .footer-contact {
+          text-align: center;
+        }
+        .footer-quicklink {
+          text-align: center;
+        }
+        .footer-about {
+          text-align: center;
+        }
+        .footer-connect {
+          text-align: center;
+        }
+      }
     }
   }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../assets/images/about.png";
 
 const About = () => (
   <div className="about">
@@ -60,10 +61,11 @@ const About = () => (
           </div>
         </div>
         <div className="division">
-          <h2 className="division-heading">What we do</h2>
+          <h1 className="division-heading">Our Divisions</h1>
+          <hr />
           <div className="our-division row">
-            <div className="col-md-4">
-              <h2>ICON</h2>
+            <div className="software col-md-4">
+              <img src={img} alt="sam" height="200px" width="200px" />
               <h2>Remote Software Design and Development</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -71,8 +73,8 @@ const About = () => (
                 dolor, neque, id consequat. Arcu{" "}
               </p>
             </div>
-            <div className="col-md-4">
-              <h2>ICON</h2>
+            <div className="training col-md-4">
+              <img src={img} alt="sam" height="200px" width="200px" />
               <h2>Training and Capacity Building in Software Development </h2>
               <p>
                 {" "}
@@ -81,8 +83,8 @@ const About = () => (
                 dolor
               </p>{" "}
             </div>
-            <div className="col-md-4">
-              <h2>ICON</h2>
+            <div className="development col-md-4">
+              <img src={img} alt="sam" height="200px" width="200px" />
               <h2>Responsive Web Designs and Development</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

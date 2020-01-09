@@ -6,7 +6,6 @@ const Footer = () => (
       <div className="news col-md-7">
         <h2 className="footer-header"> Subscribe to our newsletter</h2>
         <hr />
-
         <p>Stay updated with the latest news, reports, and updates.</p>
         <form className="news-form">
           <input className="news-input" type="email" placeholder="Email" />
@@ -16,82 +15,62 @@ const Footer = () => (
         </form>
       </div>
       <div className="feedback col-md-5">
-        <div>
-          <h2>How can we Help you?</h2>
-          <hr />
-          <form className="feedback-form">
-            <input
-              className="name"
-              type="text"
-              placeholder="Full Name"
-              required
-            />
-            <br />
-            <input
-              className="number"
-              type="email"
-              placeholder="Your Email"
-              required
-            />
-            <input
-              className="number"
-              type="number"
-              placeholder="Phone Number"
-              required
-            />
-            <br />
-            <select className="options" required>
-              <option>-- Select Catergory --</option>
-              <option value="grapefruit">Grapefruit</option>
-              <option value="lime">Lime</option>
-              <option value="coconut">Coconut</option>
-              <option value="mango">Mango</option>
-            </select>
-            <br />
-            <button className="feedback-button" type="submit">
-              SUBMIT
-            </button>
-          </form>
+        <div className="feedback-line">
+          <a href="/#">
+            <i className="fa fa-phone" aria-hidden="true"></i>+234 8187557344
+          </a>
+        </div>
+        <div className="feedback-email">
+          <a href="/#">
+            <i className="fa fa-envelope-o" aria-hidden="true"></i>
+            workflowafrica@gmail.com
+          </a>
         </div>
       </div>
     </div>
     <div className="footer-nav">
       <div className="footer-link row">
-        <div className="footer-contact col-md-4">
+        <div className="footer-contact col-md-3">
           <h3>CONTACT US</h3>
-          <ul>
-            <li>Email: workflowafrica@gmail.com</li>
-            <li>Phone Numbers: 08187557344</li>
-            <li></li>
-            <li></li>
-          </ul>
+          <p>Email: workflowafrica@gmail.com</p>
+          <p>Phone Numbers: +234 8187557344</p>
         </div>
-        <div className="footer-about col-md-4">
+        <hr />
+        <div className="footer-quicklink col-md-3">
+          <h3>Quick Link</h3>
+          <a href="/#">Home</a>
+          <br />
+          <a href="/#">About</a>
+          <br />
+          <a href="/#">Service</a>
+          <br />
+          <a href="/#">Our Team</a>
+          <br />
+          <a href="/#">Contact</a>
+        </div>
+        <hr />
+        <div className="footer-about col-md-3">
           <h3>ABOUT US</h3>
-          <ul>
-            <li>Who we are</li>
-            <li>What we do</li>
-            <li>Our Clients</li>
-            <li></li>
-          </ul>
+          <a href="/#">Who we are</a>
+          <br />
+          <a href="/#">What we do</a>
+          <br />
+          <a href="/#">Our Clients</a>
         </div>
-        <div className="footer-connect col-md-4">
+        <hr />
+        <div className="footer-connect col-md-3">
           <h3>CONNECT</h3>
-          <ul>
-            <li>
-              <a href="facebook.com">Facebook</a>
-            </li>
-            <li>
-              <a href="linkedin.com">LinkedIn</a>
-            </li>
-            <li>
-              <a href="twitter.com">Twitter</a>
-            </li>
-            <li>
-              <a href="instagram.com">Instagram</a>
-            </li>
-          </ul>
+          <a href="facebook.com">Facebook</a>
+          <br />
+          <a href="linkedin.com">LinkedIn</a>
+          <br />
+          <a href="twitter.com">Twitter</a>
+          <br />
+          <a href="instagram.com">Instagram</a>
+          <br />
+          <a href="github.com">Github</a>
         </div>
+        <hr />
       </div>
       <p className="end-note">&#169; 2019 Work flow Africa</p>
     </div>
