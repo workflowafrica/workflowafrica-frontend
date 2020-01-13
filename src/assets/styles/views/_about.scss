@@ -1,10 +1,16 @@
 .about {
   .about-header {
     padding: 30px;
+    width: 100%;
+    background: linear-gradient(to bottom, #000, transparent),
+      url("../../images/about.png");
+    background-size: cover;
+    height: 70vh;
     h1 {
       text-align: center;
       padding-top: 100px;
       font-size: 60px;
+      color: white;
     }
   }
   .description {
@@ -23,10 +29,10 @@
       }
       .our-value {
         padding: 0 10%;
-        height: 80vh;
         .value-heading {
-          background-color: $primary-color;
-          height: 76vh;
+          background: linear-gradient(to bottom, #000, transparent),
+            url("../../images/about.png");
+          background-size: cover;
           padding: 30px 50px;
           .heading {
             text-align: justify;
@@ -40,7 +46,6 @@
         .value-content {
           margin: 0%;
           padding: 0;
-          height: 80vh;
           .our-vision {
             background-color: white;
             padding: 20px 40px;
@@ -59,9 +64,8 @@
         background-color: rgb(202, 202, 255);
         text-align: center;
         margin-top: 100px;
-        padding: 0 80px;
+        padding: 50px 80px;
         .division-heading {
-          padding-top: 50px;
           margin-bottom: 0;
         }
         hr {
@@ -69,12 +73,235 @@
           width: 100px;
           margin-bottom: 30px;
         }
-        // .our-division {
-
-        // }
+        .our-division {
+          padding-top: 50px;
+          .software {
+            img {
+              height: 200px;
+              width: 200px;
+              transition: width 1s, height 1s, transform 1s;
+            }
+            img:hover {
+              width: 220px;
+              height: 220px;
+            }
+            button {
+              width: 150px;
+              height: 40px;
+              font-size: 15px;
+              border-radius: 50px;
+              border: 2px solid $secondary-color;
+              background-color: transparent;
+            }
+            button:hover {
+              background-color: $secondary-color;
+              transition: all 0.3s linear;
+              color: white;
+            }
+            .software-modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0, 0, 0); /* Fallback color */
+              background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+              .modal {
+                background: #fefefe;
+                border: 2px solid #888;
+                padding-top: 20px;
+                height: 80vh;
+                .close {
+                  color: #aaaaaa;
+                  float: right;
+                  font-size: 28px;
+                  font-weight: bold;
+                  padding-right: 20px;
+                }
+                .close:hover,
+                .close:focus {
+                  color: rgb(0, 0, 0);
+                  text-decoration: none;
+                  cursor: pointer;
+                }
+                .software-row {
+                  margin: auto;
+                  padding: 20px;
+                  width: 80%;
+                  .modal-image {
+                    img {
+                      width: 400px;
+                      height: 400px;
+                      margin: 5px;
+                    }
+                  }
+                  .modal-content {
+                    text-align: justify;
+                  }
+                }
+              }
+            }
+          }
+          .software:hover {
+            color: $secondary-color;
+          }
+          .training {
+            img {
+              height: 200px;
+              width: 200px;
+              transition: width 1s, height 1s, transform 1s;
+            }
+            img:hover {
+              width: 220px;
+              height: 220px;
+            }
+            button {
+              width: 150px;
+              height: 40px;
+              font-size: 15px;
+              border-radius: 50px;
+              border: 2px solid $secondary-color;
+              background-color: transparent;
+            }
+            button:hover {
+              background-color: $secondary-color;
+              transition: all 0.3s linear;
+              color: white;
+            }
+            .training-modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0, 0, 0); /* Fallback color */
+              background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+              .modal {
+                background: #fefefe;
+                border: 2px solid #888;
+                padding-top: 20px;
+                height: 80vh;
+                .close {
+                  color: #aaaaaa;
+                  float: right;
+                  font-size: 28px;
+                  font-weight: bold;
+                  padding-right: 20px;
+                }
+                .close:hover,
+                .close:focus {
+                  color: rgb(0, 0, 0);
+                  text-decoration: none;
+                  cursor: pointer;
+                }
+                .training-row {
+                  margin: auto;
+                  padding: 20px;
+                  width: 80%;
+                  .modal-image {
+                    img {
+                      width: 400px;
+                      height: 400px;
+                      margin: 5px;
+                    }
+                  }
+                  .modal-content {
+                    text-align: justify;
+                  }
+                }
+              }
+            }
+          }
+          .training:hover {
+            color: $secondary-color;
+          }
+          .development {
+            img {
+              height: 200px;
+              width: 200px;
+              transition: width 1s, height 1s, transform 1s;
+            }
+            img:hover {
+              width: 220px;
+              height: 220px;
+            }
+            button {
+              width: 150px;
+              height: 40px;
+              font-size: 15px;
+              border-radius: 50px;
+              border: 2px solid $secondary-color;
+              background-color: transparent;
+            }
+            button:hover {
+              background-color: $secondary-color;
+              transition: all 0.3s linear;
+              color: white;
+            }
+            .development-modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0, 0, 0); /* Fallback color */
+              background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+              .modal {
+                background: #fefefe;
+                border: 2px solid #888;
+                padding-top: 20px;
+                height: 80vh;
+                .close {
+                  color: #aaaaaa;
+                  float: right;
+                  font-size: 28px;
+                  font-weight: bold;
+                  padding-right: 20px;
+                }
+                .close:hover,
+                .close:focus {
+                  color: rgb(0, 0, 0);
+                  text-decoration: none;
+                  cursor: pointer;
+                }
+                .development-row {
+                  margin: auto;
+                  padding: 20px;
+                  width: 80%;
+                  .modal-image {
+                    img {
+                      width: 400px;
+                      height: 400px;
+                      margin: 5px;
+                    }
+                  }
+                  .modal-content {
+                    text-align: justify;
+                  }
+                }
+              }
+            }
+          }
+          .development:hover {
+            color: $secondary-color;
+          }
+        }
       }
     }
   }
+
   @media screen and (max-width: 480px) {
     .about-header {
       padding: 20px;
@@ -135,17 +362,50 @@
         }
         .division {
           background-color: rgb(202, 202, 255);
-          margin-top: 100px;
-          padding: 0 80px;
+          margin-top: 50px;
+          padding: 50px 10px;
           .division-heading {
-            padding-top: 30px;
             margin-bottom: 0;
+            font-size: 20px;
           }
           .our-division {
             display: block !important;
+            padding-top: 5px;
             .software {
-              width: 80%;
-
+              margin: 20px 0;
+              img {
+                height: 300px;
+                width: 80vw;
+                transition: width 1s, height 1s, transform 1s;
+              }
+              img:hover {
+                width: 90vw;
+                height: 300px;
+              }
+            }
+            .training {
+              margin: 20px 0;
+              img {
+                height: 300px;
+                width: 80vw;
+                transition: width 1s, height 1s, transform 1s;
+              }
+              img:hover {
+                width: 90vw;
+                height: 300px;
+              }
+            }
+            .development {
+              margin: 20px 0;
+              img {
+                height: 300px;
+                width: 80vw;
+                transition: width 1s, height 1s, transform 1s;
+              }
+              img:hover {
+                width: 90vw;
+                height: 300px;
+              }
             }
           }
         }

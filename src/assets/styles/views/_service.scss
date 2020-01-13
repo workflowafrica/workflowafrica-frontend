@@ -15,7 +15,8 @@
       .container-header {
         line-height: 160%;
         text-align: center;
-        padding-bottom: 10px;
+        padding: 20px 0;
+        margin: 0;
       }
       p {
         line-height: 160%;
@@ -55,6 +56,16 @@
           justify-content: space-between;
           size: 500px;
         }
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .service-header {
+      padding: 30px;
+      .title {
+        text-align: center;
+        padding-top: 100px;
+        font-size: 60px;
       }
     }
   }

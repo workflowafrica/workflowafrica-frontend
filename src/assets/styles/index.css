@@ -8,22 +8,6 @@
   background-size: cover;
 }
 
-.about-header {
-  background-image: url("../images/about.png"),
-    linear-gradient(
-      269.65deg,
-      rgba(177, 161, 13, 0.8) 37.69%,
-      rgba(118, 109, 24, 0.8) 99.8%
-    );
-  background-size: cover;
-  min-height: 400px;
-}
-
-.value-heading {
-  background-image: url("../images/about.png");
-  background-size: cover;
-}
-
 .contact-header {
   background-image: url("../images/background.png"),
     linear-gradient(

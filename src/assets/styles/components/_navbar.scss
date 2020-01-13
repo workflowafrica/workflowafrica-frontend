@@ -1,9 +1,15 @@
 .navbar {
   position: fixed;
   min-width: 100vw;
-  padding: 0px 10px;
+  height: 10vh;
+  padding: 10px 10px;
   justify-content: space-between;
   align-items: center;
+  img {
+    width: 60px;
+    height: 60px;
+    margin-left: 60px;
+  }
   .mobile-nav {
     display: none;
   }
@@ -61,6 +67,26 @@
       right: 0;
       height: 100vh;
       transition: all 0.3s ease-in;
+    }
+    .navbar.scrolled {
+      .mobile-nav {
+        background-color: rgb(0, 0, 0);
+      }
+    }
+  }
+}
+
+.navbar.scrolled {
+  background: rgb(255, 255, 255);
+  transition: all 0.3s linear;
+  z-index: 9999;
+  .nav-links {
+    ul {
+      li {
+        a {
+          color: black;
+        }
+      }
     }
   }
 }

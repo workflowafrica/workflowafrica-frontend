@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 
@@ -6,7 +6,11 @@ import Logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   let container = React.createRef();
+  const scroll = useRef();
 
+  
+  const [scrolled, setScrolled] = useState(false);
+  
   const [open, setOpen] = useState(false);
 
   const handleOutsideClick = useCallback(
@@ -34,8 +38,19 @@ const Navbar = () => {
     document.addEventListener("keydown", handleOutsideClick);
   }, [handleOutsideClick]);
 
+    useEffect(() => {
+      document.addEventListener("scroll", e => {
+        if (window.pageYOffset > 400) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+      });
+    }, []);
+
+
   return (
-    <div className="navbar">
+    <div className={`navbar ${scrolled ? "scrolled" : null} `} ref={scroll}>
       <img src={Logo} alt="Workflow Africa logo" />
       <i className="mobile-nav fa fa-bars" onClick={() => setOpen(true)} />
       <div

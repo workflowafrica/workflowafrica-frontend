@@ -4,7 +4,8 @@ const Footer = () => (
   <div className="footer">
     <div className="news-letter row">
       <div className="news col-md-7">
-        <h2 className="footer-header"> Subscribe to our newsletter</h2>
+        <fieldset>
+        <legend><h2 className="footer-header"> Subscribe to our newsletter</h2></legend>
         <hr />
         <p>Stay updated with the latest news, reports, and updates.</p>
         <form className="news-form">
@@ -13,6 +14,7 @@ const Footer = () => (
             Subscribe
           </button>
         </form>
+        </fieldset>
       </div>
       <div className="feedback col-md-5">
         <div className="feedback-line">
